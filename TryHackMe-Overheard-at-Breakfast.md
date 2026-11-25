@@ -24,13 +24,11 @@ STEP-BY-STEP WALKTHROUGH:
 
 1. Analyzing the conversation
 
-I downloaded the task files and opened conversation.png. While reading the dialogue, I found a crucial piece of information. Lambo mentioned he doesn't use social media much but left his email address for contact:
-lambobyteLotushotel@gmail.com
+I downloaded the task files and opened conversation.png. While reading the dialogue, I found a crucial piece of information. Lambo mentioned he doesn't use social media much but left his email address for contact: lambobyteLotushotel@gmail.com
 
 2. Finding the Gravatar profile
 
-Gravatar uses MD5 hashes of email addresses to link users to their profile pictures across different websites. So I took Lambo's email and converted it into an MD5 hash. Then, I appended this hash to the Gravatar URL format:
-https://gravatar.com/d4a5fc5d3128890778667e24617d7cc0
+Gravatar uses MD5 hashes of email addresses to link users to their profile pictures across different websites. So I took Lambo's email and converted it into an MD5 hash. Then, I appended this hash to the Gravatar URL format: https://gravatar.com/d4a5fc5d3128890778667e24617d7cc0
 
 3. Getting the Flag
 
@@ -40,3 +38,5 @@ I recognized this format as Base64 encoding (indicated by the mix of uppercase, 
 echo "VEhNe1MzY3JWRF9QcjBmaWwzX0g0c19iMzNuX0lkZW50MWZpM2Q?" | base64 -d
 
 Flag: THM{S3crwd_Pr0fil3_H4s_b33n_Ident1fi3d}
+
+<img width="919" height="655" alt="2026-11-25_23-25-04" src="https://github.com/user-attachments/assets/631a0350-2a75-4e8e-93ef-9610d97775b7" />
